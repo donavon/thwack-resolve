@@ -4,11 +4,17 @@
 
 - Functionally equivalent to `new URL(url, base).href`
 - Works on browsers, NodeJS, and React Native
-- Has loads of tests that use `URL` as its expected results
+- Tiny.
+- Has loads of tests that use JSDOM's WHATWG `URL` as its expected results
+
+## What is it not?
+
+- It is not, nor does it intend to be, a replacement for `URL` (i.e. an implementation of the WHATWG URL Standard )
+- If you need to full `URL` replacement, see [whatwg-url](https://github.com/jsdom/whatwg-url).
 
 ## Why?
 
-I needed to resolve a URL against a base when writing [Thwack](https://github.com/donavon/thwack). Initially I used `new URL(url, base).href`, but found that it failed when running on React Native as it's implimenation of `URL` sucks (to put it mildly).
+I needed to resolve a URL against a base when writing [Thwack](https://github.com/donavon/thwack). Initially I used `new URL(url, base).href`, but found that it failed when running on React Native as its implimenation of `URL` sucks (to put it mildly).
 
 I initially imported [react-native-url-polyfill](https://github.com/charpeni/react-native-url-polyfill) but it's 41k, which is more than 10x Thwack itself!
 
