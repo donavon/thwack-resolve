@@ -1,0 +1,56 @@
+{
+  "name": "@thwack/resolve",
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "version": "1.0.0",
+  "module": "dist/thwack-resolve.esm.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Donavon West <github@donavon.com> (https://github.com/donavon)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/donavon/thwack-resolve.git"
+  },
+  "keywords": [
+    "url",
+    "resolve",
+    "rfc3986",
+    "rfc",
+    "3986"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepublishOnly": "tsdx test",
+    "prepare": "tsdx build"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "MIT",
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "tsdx": "^0.13.2",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  }
+}
