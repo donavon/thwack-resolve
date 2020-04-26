@@ -7,7 +7,7 @@
 - Tiny.
 - Has loads of tests that use JSDOM's WHATWG `URL` as its expected results
 
-## What is it not?
+## What it's not?
 
 - It is not, nor does it intend to be, a replacement for `URL` (i.e. an implementation of the WHATWG URL Standard )
 - If you need to full `URL` replacement, see [whatwg-url](https://github.com/jsdom/whatwg-url).
